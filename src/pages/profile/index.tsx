@@ -10,7 +10,10 @@ export default function Profile() {
   return (
     user && (
       <div>
-        <img src={user.picture} alt={user?.name || "user profile pic"} />
+        <img
+          src={user.picture ?? undefined}
+          alt={user?.name || "user profile pic"}
+        />
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
