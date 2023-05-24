@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { UserProfile, withPageAuthRequired } from "@auth0/nextjs-auth0/client";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,8 @@ const Home: React.FC<HomeProps> = ({ user }) => {
       <main>
         <div>
           <div>Hello {user.name}</div>
-          <a href="/api/auth/login">Login</a>
-          <a href="/api/auth/logout">Logout</a>
+          <Link href="/api/auth/login">Login</Link>
+          <Link href="/api/auth/logout">Logout</Link>
         </div>
       </main>
     </>
