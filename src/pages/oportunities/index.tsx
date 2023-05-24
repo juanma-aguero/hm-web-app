@@ -1,11 +1,11 @@
 import { Button, Modal, Space, Typography } from "antd";
 import { Breadcrumb } from "antd";
-import List from "./list/list";
 import Link from "next/link";
 import React, { useState } from "react";
-import JobForm from "./JobForm";
+import JobForm from "../../components/oportunities/JobForm";
 import Head from "next/head";
 import { JobApplication } from "@/__generated__/graphql";
+import List from "@/components/oportunities/list/list";
 
 const { Title } = Typography;
 

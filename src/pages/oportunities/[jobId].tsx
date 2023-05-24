@@ -1,11 +1,8 @@
-import { Button, Card, Descriptions, Modal, Space, Typography } from "antd";
+import { Button, Card, Descriptions, Space, Typography } from "antd";
 import { Breadcrumb } from "antd";
-import List from "./list/list";
 import Link from "next/link";
-import React, { useState } from "react";
-import JobForm from "./JobForm";
+import React from "react";
 import Head from "next/head";
-import { JobApplication } from "@/__generated__/graphql";
 import { useRouter } from "next/router";
 import { gql, useQuery } from "@apollo/client";
 
