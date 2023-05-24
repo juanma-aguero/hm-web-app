@@ -5,7 +5,7 @@ export default withApiAuthRequired(async function products(req, res) {
   // `getAccessToken` will fetch you a new one using the `refresh_token` grant
   const { accessToken } = await getAccessToken(req, res);
   console.log("accessToken", accessToken);
-  const response = await fetch("http://localhost:3010/graphql", {
+  const response = await fetch(`${process.env.HM_API_CORE}/graphql`, {
     method: "POST",
     body: JSON.stringify(req.body),
     headers: {
